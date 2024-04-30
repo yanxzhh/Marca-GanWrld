@@ -1,0 +1,396 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; peso da fonte: 900; estilo da fonte: itálico;
+
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(59, 59, 59);
+    background-image: url(imagens/fundo\ 4k\ fr.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+    background-attachment: fixed;
+
+    /* background - Shorthand
+        color > image > position > repeat > size > attachment*/
+}
+.interface {
+    max-width: 1280px;
+    margin: 10 auto; 
+    
+    
+}
+ 
+
+h2.titulo {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #2b035f;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+.header {
+    padding: 40px 4%;
+}
+
+header  .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: rgb(180, 199, 233);
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type:none;
+}
+
+header nav ul li {
+    display:inline-block;
+    padding: 0 60px;
+
+}
+
+header .contato button{
+    position: relative;
+    padding: 11px 11px;
+    font-size: 21px;
+    font-weight: 900px;
+    background-color:rgb(43, 6, 145);
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #a8a7a7;
+    margin-top:-600px;
+    left: 170px; 
+    
+}
+
+
+header .contato button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #06b2c9;
+    transform: scale(1.03)
+
+}
+
+
+.icones-contato{
+    position: relative;
+    left: 1100px;
+    text-align:top;
+    top: -600px;
+    color: #f1eef1;
+    font-size: 17px;
+    cursor: pointer;
+    
+ 
+}
+
+.icones-contato i{
+    color: #929090;
+    transition: 2s;
+}
+
+.icones-contato hover{
+    transform: scale(1.05);
+    color: black;
+}
+
+
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+.store{
+    position: relative;
+    left:1200px;
+    text-align: left;
+    font-size: 160px;
+    color: #2b035f;
+    top: -440px;
+
+}
+    
+
+main{
+    color: #fafafa;
+}
+
+.txt-site{
+    align-items: center;
+    padding: 130px;
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+.txt-site h1{
+    font-size: 40px;
+    line-height: 15px;
+}
+.txt-site h2 {
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.topo-site .txt-site span{
+ color: rgb(173, 9, 238);
+ font-size: 80px;
+}
+
+.topo-site .txt-site p{
+    color: #fafafa;
+    padding: 8px;
+    font-size: 21px;
+
+}
+
+.topo-site .store i{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* QUEM SOMOS */
+section.quem-somos{
+    padding: 40px 4%;
+}
+
+section.quem-somos .flex{
+  gap: 60px;
+}
+.quem-somos .quem-somos-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #8b06d8;
+    margin-top: 50px;
+    transition: .2s;
+}
+.quem-somos .quem-somos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff83
+}
+.quem-somos .quem-somos-box i{
+    position: relative;
+    font-size: 70px;
+    color: #340374;
+    left: 640px;
+}
+.quem-somos .quem-somos-box p{
+    font-size: 25px;
+    margin: 15px ;
+    padding: 100px;
+}
+    
+/* Produtos */
+.itens .titulo span{
+    color: #8312b8;
+
+}
+
+section.produtos{
+    margin-top: 400px;
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff69;
+    
+}
+section.produtos.flex{
+   justify-content: space-around;
+   margin-top: 60px;
+}
+
+
+.img-prod{
+    border-radius: 40px;
+    transition: 8s;
+    margin: auto;
+    height: 900px;
+    width: 700px;
+    background-position: 100% 0%;
+    cursor: pointer;
+    background-size:contain;
+    position: relative;
+    margo;
+}
+
+.img-prod:hover{
+    background-position: 100% 100%;    
+}
+
+
+.overlay{
+    position:relative;
+    top: 0;
+    left:0;
+    widht:100%;
+    height:100%;
+    background-color: #20202049;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #6304e0;    
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+
+/* FALE CONOSCO */
+
+section.formulario{
+    margin-top: -1600px;
+    padding: 80px 4%;
+}
+
+section.formulario h2{
+    position: relative;
+    left:100px;
+    color: #ffffff;
+    font-size: 45px;
+}
+section.formulario span{
+    color: #903dfd;
+}
+
+form{
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 40px;
+    left: 100px;
+ 
+}
+
+form input, form textarea{
+    position: relative;
+    width: 100%;
+    background-color: rgba(27, 27, 27, 0.774);
+    border: 0;
+    outline: 0;
+    padding: 25px 15px;
+    border-radius: 15px;
+    color: #FFF;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form input::placeholder{
+    color: #bd22fa;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: #5d25a5;
+    color: rgb(252, 252, 252);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+    top: 50px;
+}
+
+/* RODAPÉ */
+
+footer{
+    padding: 3px 4%;
+    box-shadow: 0 0 3px 3px #ffffff69;
+    margin-top: 100px;
+}
+
+.logo-footer{
+position: relative;
+margin-top: 50px;
+left: -120px;
+}
+
+.icones-footer{
+    position: relative;
+    top:-20px;
+    left:-5px;
+    font-size: 30px;
+   
+}
+.icones-footer i{
+    color: #1000ec;
+    transform: scale(1.03)
+}
+.borda{
+    border-top: 2px solid #2b035f;
+}
+footer .line-footer{   
+position: relative;
+ top: -200px;
+}
+
+
+footer .line-footer p i{
+    color: #1900fa;
+    font-size: 30px;
+    
+}
+
+footer .line-footer p a{
+    color: #FFF;
+}
+
+
+@media screen and (max-widht:1360px){
+    .flex{
+        flex-direction: column;
+    }
+    /* cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+}
+
